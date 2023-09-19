@@ -186,6 +186,180 @@
        
       </div>
        </div>
+
+
+       <script>
+    
+        function turnofplayer(index){
+         const dice=document.getElementById(`dice${index}`)
+         const six=document.getElementById(`six${index}`)
+         const four=document.getElementById(`four${index}`)
+         // const audio=document.getElementById(`audio${index}`)
+     //     audio.setAttribute("autoplay","true")
+     //     // audio.setAttribute("loop","true")
+      
+     // setTimeout(function removeaudio(){
+     //   audio.se
+     // },5000)
+     var audio = new Audio('./dice-142528.mp3');
+ audio.play();
+        
+ 
+        
+ 
+ 
+         const rollthedice=Math.floor(Math.random()*(7-1)+1)
+         setTimeout(function addanimation(){
+           dice.classList.add("rotatedice")
+         },300)
+         
+         setTimeout(function removeanimation(){
+             dice.classList.remove("rotatedice")
+ 
+         },700)
+       
+         setTimeout(function displaydicenum(){
+             switch (rollthedice)
+           {
+               case 1:
+                   dice.src="./img/dice1.png"
+                   break;
+               case 2:
+                   dice.src="./img/dice2.png"
+                   break;
+               case 3:
+                   dice.src="./img/dice3.png"
+                   break;
+               case 4:
+                   dice.src="./img/dice4.png"
+                   setTimeout(function addfour(){
+                     four.className="six"
+                   },100)
+                 
+                     four.className="size"
+                  
+ 
+                   break;
+               case 5:
+                   dice.src="./img/dice5.png"
+                   break;
+               case 6:
+                   dice.src="./img/dice6.png"
+                   
+                   setTimeout(function addsix(){
+                     six.className="six"
+                   },100)
+                  
+                     six.className="size"
+                   
+                  }
+ 
+         },500)
+ 
+        
+ 
+       }
+       function turnofbothplayer(index1,index2){
+         const dice1=document.getElementById(`dice${index1}`)
+         const dice2=document.getElementById(`dice${index2}`)
+         const rollthedice1=Math.floor(Math.random()*(7-1)+1)
+         const rollthedice2=Math.floor(Math.random()*(7-1)+1)
+         const six1=document.getElementById(`six${index1}`)
+         const six2=document.getElementById(`six${index2}`)
+         const four1=document.getElementById(`four${index1}`)
+         const four2=document.getElementById(`four${index2}`)
+ 
+ 
+         dice1.classList.add("rotatedice")
+         setTimeout(function removeanimation(){
+             dice1.classList.remove("rotatedice")
+ 
+         },700)
+         dice2.classList.add("rotatedice")
+         setTimeout(function removeanimation(){
+             dice2.classList.remove("rotatedice")
+ 
+         },700)
+         
+         var audio = new Audio('./dice-142528.mp3');
+ audio.play();
+ 
+ var audio = new Audio('./dice-142528.mp3');
+ audio.play();
+ 
+         setTimeout(function displaydicenum(){
+ 
+             switch (rollthedice1)
+           {
+               case 1:
+                   dice1.src="./img/dice1.png"
+                   break;
+               case 2:
+                   dice1.src="./img/dice2.png"
+                   break;
+               case 3:
+                   dice1.src="./img/dice3.png"
+                   break;
+               case 4:
+                   dice1.src="./img/dice4.png"
+                   setTimeout(function addfour(){
+                     four1.className="six"
+                   },100)
+                 
+                     four1.className="size"
+                   break;
+               case 5:
+                   dice1.src="./img/dice5.png"
+                   break;
+               case 6:
+                   dice1.src="./img/dice6.png"
+                   setTimeout(function addsix(){
+                     six1.className="six"
+                   },100)
+                  
+                     six1.className="size"
+                  }
+ 
+         },700)
+ 
+         setTimeout(function showingthenum(){
+             switch (rollthedice2)
+           {
+               case 1:
+                   dice2.src="./img/dice1.png"
+                   break;
+               case 2:
+                   dice2.src="./img/dice2.png"
+                   break;
+               case 3:
+                   dice2.src="./img/dice3.png"
+                   break;
+               case 4:
+                   dice2.src="./img/dice4.png"
+                   setTimeout(function addfour(){
+                     four2.className="six"
+                   },100)
+                 
+                     four2.className="size"
+                   break;
+               case 5:
+                   dice2.src="./img/dice5.png"
+                   break;
+               case 6:
+                   dice2.src="./img/dice6.png"
+                   setTimeout(function addsix(){
+                     six2.className="six"
+                   },100)
+                  
+                     six2.className="size"
+           }
+                  },700)
+         }
+ 
+ 
+ 
+       
+     </script>  
     
 </body>
 </html>
