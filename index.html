@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roll The Dice</title>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">Roll The Dice</div>
+       <div class="row">
+        <div class="col-5-of-content">
+          <div class="subheading">Player A</div>
+          <img src="./img/dice.png" alt="" class="dice" id="dice1" />
+          <img src="./img/six.png" alt="" class="size" id="six1">
+          <img src="./img/four.png" alt="" class="size" id="four1">
+          <!-- <audio src="./dice-142528.mp3" controls  class="audio-player"    id="audio1"></audio> -->
+          <div class="playturn">
+          <img src="./img/player1.png" alt="" class="img-player" >
+          <button type="button" onclick="turnofplayer(1)" class="playbutton">
+            play Your turn
+          </button>
+          </div>
+        </div> 
+      
+        <div class="col-2">
+          <img src="./img/towdice.png" alt="" class="towdice">
+          <button type="button" onclick="turnofbothplayer(1,2)" class="playbutton playboth"> Play Both</button>
+        </div>
+         
+        <div class="col-5-of-content">
+          <div class="subheading">Player B</div>
+          <img src="./img/dice.png" alt="" class="dice" id="dice2" />
+          <img src="./img/six.png" alt="" class="size" id="six2">
+          <img src="./img/four.png" alt="" class="size" id="four2">
+          
+             <div class="playturn"> <img src="./img/player2.png" alt="" class="img-player">
+              <button type="button" onclick="turnofplayer(2)" class="playbutton">
+                play Your turn
+              </button>
+            </div>
+       
+      </div>
+       </div>
+    
+</body>
+</html>
