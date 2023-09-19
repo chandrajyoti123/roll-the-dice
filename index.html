@@ -76,7 +76,7 @@
         animation-delay: 0.2s;
         animation-iteration-count:1;
         animation-timing-function:linear;
-        animation-duration: 0.8s;
+        animation-duration: 1s;
         transform: translateY(0);
         bottom: 270px;
       }
@@ -132,7 +132,7 @@
           border:none;}
         .rotatedice {
         animation-name: rotethedice;
-        animation-duration: 0.5s;
+        animation-duration: 0.3s;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
       }
@@ -216,7 +216,7 @@
          setTimeout(function removeanimation(){
              dice.classList.remove("rotatedice")
  
-         },700)
+         },1000)
        
          setTimeout(function displaydicenum(){
              switch (rollthedice)
@@ -254,7 +254,7 @@
                    
                   }
  
-         },500)
+         },1000)
  
         
  
@@ -274,12 +274,12 @@
          setTimeout(function removeanimation(){
              dice1.classList.remove("rotatedice")
  
-         },700)
+         },1000)
          dice2.classList.add("rotatedice")
          setTimeout(function removeanimation(){
              dice2.classList.remove("rotatedice")
  
-         },700)
+         },1000)
          
          var audio = new Audio('./dice-142528.mp3');
  audio.play();
@@ -320,7 +320,7 @@
                      six1.className="size"
                   }
  
-         },700)
+         },1000)
  
          setTimeout(function showingthenum(){
              switch (rollthedice2)
@@ -353,7 +353,7 @@
                   
                      six2.className="size"
            }
-                  },700)
+                  },1000)
          }
  
  
